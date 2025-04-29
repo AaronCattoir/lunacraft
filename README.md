@@ -53,6 +53,8 @@ Traditional text RPGs often rely on rigid scripting or manual content creation, 
 
 ### Data Flow Summary
 
+![Blank diagram - Logic](https://github.com/user-attachments/assets/d2dab574-28c9-496e-b007-42917446805f)
+
 1. **User Input → WebSocket → FastAPI**   
 2. **Intent Parsing & Plan Generation** via Azure OpenAI **→ Game state update & plan execution**  
 3. **If competition detected:** multistep adjudication → LLM-driven outcome narration + goal updates  
