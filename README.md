@@ -61,3 +61,8 @@ Traditional text RPGs often rely on rigid scripting or manual content creation, 
 4. **Plot narration & dialogue sent back to user.**  
 5. **Image generation request → DALL·E service** → returned image URL via WebSocket.  
 6. **State saved per user in JSON files.**
+
+
+### Game Map
+![Blank diagram - Map](https://github.com/user-attachments/assets/caac6fae-4636-42c8-a509-2b44f1b1d80e)
+
