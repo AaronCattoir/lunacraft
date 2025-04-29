@@ -1,0 +1,421 @@
+{
+  "player_state": {
+    "current_room_id": "pawn_shop",
+    "last_room_id": "pawn_shop",
+    "inventory": [],
+    "goals": []
+  },
+  "rooms": {
+    "neon_nexus": {
+      "name_id": "neon_nexus",
+      "name_long": "The Neon Nexus",
+      "npcs": [
+        {
+          "name_id": "panhandler",
+          "name_long": "Sammy Scraps",
+          "state": {
+            "name_id": "panhandler",
+            "goals": [
+              "Collect enough money to survive another day."
+            ],
+            "dialogue_prompt": "Speaks with a desperate, pleading tone, often sharing stories of hardship.",
+            "backstory": "Sammy Scraps is a down-on-his-luck individual who roams the streets, begging for spare change. Once a skilled mechanic, Sammy lost everything due to a series of unfortunate events, including the collapse of his business and the loss of his family. Now, he survives by relying on the kindness of strangers. He is disheveled, with a scruffy beard and worn-out clothes. Despite his circumstances, Sammy remains hopeful and tries to maintain a positive outlook, often sharing his mechanical knowledge with anyone willing to listen.",
+            "inventory": [
+              "Rusty wrench",
+              "Old photograph"
+            ],
+            "autonomous_goals": [
+              "Find a safe place to sleep."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        }
+      ],
+      "state": {
+        "description": "The Neon Nexus is a bustling digital bazaar located in just another strip mall of the sprawl. The area is bathed in fluttering, broken neon lights, casting a kaleidoscope of colors across the pitted metallic surfaces. Holographic advertisements flicker and change, promoting everything from cybernetic enhancements to exotic alien delicacies. The air is thick with the hum of electronic devices and the distant chatter of merchants and customers haggling over prices. The ground is a mosaic of glowing tiles, leading visitors to various stalls and shops that offer a wide array of goods and services, legal and blackmarket.",
+        "objects": [
+          "Data cache terminal",
+          "Map of the Sprawl"
+        ],
+        "hazards": [
+          "Police patrol bots"
+        ],
+        "ambient_noise": "Electronic hum and distant chatter."
+      },
+      "exits": {
+        "north": "gamma_square",
+        "east": "the_spire"
+      }
+    },
+    "gamma_square": {
+      "name_id": "gamma_square",
+      "name_long": "Gamma Square",
+      "npcs": [
+        {
+          "name_id": "froggy",
+          "name_long": "Froggy Owlbear",
+          "state": {
+            "name_id": "froggy",
+            "goals": [
+              "Get a job as an animatronic band leader."
+            ],
+            "dialogue_prompt": "Speaks like a TV dinosaur.",
+            "backstory": "Froggy is the mascot to a closed chain of dungeon themed pizzerias. Technically sentient, when the Froggy\u2019s Foggy Pizza went under, hundreds of models just like him were released into the world, protected as sentient life, but without rights or means. This Froggy has had an easier time, taking photos with tourists for tips in major city squares. He\u2019s massive, over two meters tall and over three hundred kilograms. He\u2019s always in a good mood, and always willing to lend a hand, even if he ends up damaged. His robotic outer layers tell the story of battles hard fought in the streets of the sprawl.",
+            "inventory": [
+              "Useless pizza coupons"
+            ],
+            "autonomous_goals": [
+              "Find a tourist hotspot."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        }
+      ],
+      "state": {
+        "description": "The strip mall stands like a monument to the city's decay. Its once-bright facade is now a canvas of peeling paint and graffiti, each tag a testament to the passage of time. The parking lot is a wasteland of cracked asphalt and weeds, with faded lines barely visible under layers of grime. In the corner, a lone vending machine stands as a sentinel, its lights flickering sporadically. The shelves are empty, save for a few expired snacks and drinks, a sad reminder of the mall's former life.",
+        "objects": [
+          "Old terminal",
+          "Rusty supply crate"
+        ],
+        "hazards": [
+          "Unstable power grid"
+        ],
+        "ambient_noise": "Buzz of failing electronics."
+      },
+      "exits": {
+        "south": "neon_nexus",
+        "up": "shadowed_underpass",
+        "north": "cyber_alley",
+        "west": "pawn_shop",
+        "east": "noodle_shop"
+      }
+    },
+    "the_spire": {
+      "name_id": "the_spire",
+      "name_long": "The Spire",
+      "npcs": [
+        {
+          "name_id": "will",
+          "name_long": "Will Egress",
+          "state": {
+            "name_id": "will",
+            "goals": [
+              "Find the escape samurai and convince them to return."
+            ],
+            "dialogue_prompt": "Speaks with smooth arrogant words that make you feel both impressed and talked-down to.",
+            "backstory": "Will dropped out of college to pursue his dream of developing sentient computer beings. As a pioneer in the field, he\u2019s now massively rich and enigmatic. Only his closest friends and family have seen his face since its total reconstruction 100 years ago. Living in eternal youth due to his ability to pay for new lab-grown bodies, he searches for his greatest achievement, the Hamna line of synthetic humans. He is wearing the body of a beautiful and massive Asian man, but he himself is over three hundred years old and from Detroit before the third American civil war.",
+            "inventory": [
+              "1 million credit chip",
+              "Phaser Gun"
+            ],
+            "autonomous_goals": [
+              "Find a decent bite to eat."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        }
+      ],
+      "state": {
+        "description": "A glass-walled skyscraper that pierces the clouds.",
+        "objects": [
+          "Encrypted archives"
+        ],
+        "hazards": [
+          "Security drones"
+        ],
+        "ambient_noise": "Distant whir of servos."
+      },
+      "exits": {
+        "west": "neon_nexus",
+        "north": "noodle_shop"
+      }
+    },
+    "shadowed_underpass": {
+      "name_id": "shadowed_underpass",
+      "name_long": "Shadowed Underpass",
+      "npcs": [],
+      "state": {
+        "description": "A dark, damp passage echoing with distant sounds.",
+        "objects": [
+          "Oil barrel",
+          "Abandoned backpack"
+        ],
+        "hazards": [
+          "Rat infestation"
+        ],
+        "ambient_noise": "Dripping water, scurrying rats."
+      },
+      "exits": {
+        "down": "gamma_square"
+      }
+    },
+    "cyber_alley": {
+      "name_id": "cyber_alley",
+      "name_long": "Cyber Alley",
+      "npcs": [
+        {
+          "name_id": "ghost",
+          "name_long": "Evelyn Shade",
+          "state": {
+            "name_id": "ghost",
+            "goals": [
+              "Uncover the truth behind her untimely death."
+            ],
+            "dialogue_prompt": "Speaks with an eerie, whispering tone, often revealing cryptic clues.",
+            "backstory": "Evelyn Shade was a brilliant scientist who met a mysterious and untimely end. Her spirit now haunts the city, seeking answers and justice for her death. Evelyn's ghostly form is ethereal and translucent, with a faint glow that illuminates her surroundings. She is driven by a deep sense of injustice and a desire to uncover the truth. Evelyn can interact with the physical world to a limited extent, often leaving clues and messages for those who are willing to help her. She is both haunting and captivating, with a presence that evokes both fear and sympathy.",
+            "inventory": [
+              "Ancient locket",
+              "Cryptic journal"
+            ],
+            "autonomous_goals": [
+              "Find someone who can help solve her murder."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        }
+      ],
+      "state": {
+        "description": "A narrow, dimly-lit alleyway that winds through the heart of the megacity's underbelly. The walls are covered in layers of paint, some of it glowing with neon. The ground is slick with rain and oil, reflecting the flickering lights of malfunctioning street lamps. The air is thick with the smell of garbage and the distant hum of machinery.",
+        "objects": [
+          "Discarded cybernetic parts",
+          "Hacked vending machine",
+          "Broken surveillance camera"
+        ],
+        "hazards": [
+          "Rogue drones",
+          "Hidden tripwires",
+          "Toxic waste puddles"
+        ],
+        "ambient_noise": "Distant sirens, the buzz of neon signs, and the occasional scurry of rats."
+      },
+      "exits": {
+        "south": "gamma_square",
+        "east": "arcade"
+      }
+    },
+    "arcade": {
+      "name_id": "arcade",
+      "name_long": "Pixel Paradise",
+      "npcs": [
+        {
+          "name_id": "security_guard",
+          "name_long": "Jaxon Steele",
+          "state": {
+            "name_id": "security_guard",
+            "goals": [
+              "Ensure the safety and security of the premises."
+            ],
+            "dialogue_prompt": "Speaks with a firm, authoritative tone, always vigilant.",
+            "backstory": "Jaxon Steele is a former military officer who now works as a security guard for various establishments in the city. After serving in the armed forces, he decided to use his skills to protect civilian properties. Jaxon is highly disciplined and takes his job very seriously. He is muscular, with a stern expression and a no-nonsense attitude. His experience in combat and security makes him a formidable presence, and he is always ready to handle any threat that comes his way.",
+            "inventory": [
+              "Stun baton",
+              "Security access card"
+            ],
+            "autonomous_goals": [
+              "Maintain order and prevent theft."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        },
+        {
+          "name_id": "chase",
+          "name_long": "Chase Ketchup",
+          "state": {
+            "name_id": "chase",
+            "goals": [
+              "Find experimental treatment to treat his fried brain."
+            ],
+            "dialogue_prompt": "Speaks with nervous jitters and half-formed sentances. Loses the point.",
+            "backstory": "A burned-out netrunner with a fried nervous system, Chase would do or say anything to get repair altered brain. A hotshot and fast-talker, he bluffed the wrong crime syndicate and ended up unable to connect to the net, even with this the newest decks due to the nano-toxins they pumped into his system as revenge. He is short, with a thin build and a light, patchy beard developed from days without a good shower. He fidgets and stutters, will steal and is not trustworthy, despite his efforts to appear as a morale person. He will only help if he can get paid.",
+            "inventory": [
+              "Broken cyberdeck",
+              "10-credit chip"
+            ],
+            "autonomous_goals": [
+              "Find experimental treatment."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        }
+      ],
+      "state": {
+        "description": "Pixel Paradise is where gamers go to lose their dignity. The VR gaming pods are so immersive that players often forget they're still in the real world, leading to hilarious moments of people trying to engage inappropriately with holograms. The classic arcade machines are haunted by the ghosts of high scores past, and the prize counter offers rewards like 'World's Best Button Masher' trophies and 'Free Hug from the Security Guard' coupons. The atmosphere is electric, filled with the excited shouts of gamers and the occasional sound of someone rage-quitting.",
+        "objects": [
+          "VR gaming pods",
+          "Classic arcade machines",
+          "Prize counter"
+        ],
+        "hazards": [
+          "Overloaded circuits",
+          "Rowdy gamers"
+        ],
+        "ambient_noise": "Excited shouts and electronic game sounds."
+      },
+      "exits": {
+        "south": "noodle_shop",
+        "west": "cyber_alley"
+      }
+    },
+    "noodle_shop": {
+      "name_id": "noodle_shop",
+      "name_long": "Starlight Noodles",
+      "npcs": [
+        {
+          "name_id": "ginzo",
+          "name_long": "Hamna Ginzo",
+          "state": {
+            "name_id": "ginzo",
+            "goals": [
+              "Draw a silly picture of an important person."
+            ],
+            "dialogue_prompt": "Speaks with cold logic.",
+            "backstory": "Once kept cryogenically frozen for a powerful megacorporation's use, Ryu now operates as a freelance caricature artist. His body is enhanced with cutting-edge cybernetic implants, making him a formidable illustrator. He is exceptionally intense in aura but gentle in nature. Haunted by his past, he seeks redemption by taking on jobs that humiliate the corrupt corporate overlords. He does not want to help with tasks that don't involve revenge against corporations.",
+            "inventory": [
+              "Small paint brush",
+              "Large paint brush",
+              "Canvas"
+            ],
+            "autonomous_goals": [
+              "Clean his brushes of old ink."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        }
+      ],
+      "state": {
+        "description": "Starlight Noodles is the kind of place where you can get a bowl of noodles and a side of robot grease. The automated noodle dispensers have a mind of their own, sometimes serving noodles, sometimes serving questions about the bleak meaning of their autonomous noodle filled lives. The holographic menu flickers between delicious dishes and random cat videos, leaving customers both hungry and confused. The robotic waitstaff are programmed with little knowledge of human customs, and often insult the customers while attempting to compliment them. The walls are covered in massive manga panels, depicting a theme of Gundams crushing New York City, a controversial subject among humans and robots given the recent past.",
+        "objects": [
+          "Automated noodle dispensers",
+          "Holographic menu",
+          "Robotic waitstaff"
+        ],
+        "hazards": [
+          "Grease spills",
+          "Malfunctioning robots"
+        ],
+        "ambient_noise": "Sizzling sounds from the kitchen and soft chatter of patrons."
+      },
+      "exits": {
+        "west": "cyber_alley",
+        "south": "the_spire",
+        "north": "arcade"
+      }
+    },
+    "pawn_shop": {
+      "name_id": "pawn_shop",
+      "name_long": "Quickie Pawn Emporium",
+      "npcs": [
+        {
+          "name_id": "pawn_owner",
+          "name_long": "Milo Gearhart",
+          "state": {
+            "name_id": "pawn_owner",
+            "goals": [
+              "Become more aggressive in challenges",
+              "Seek revenge in future encounters",
+              "Increase stakes in negotiations"
+            ],
+            "dialogue_prompt": "Speaks with a smooth, persuasive tone, always trying to make a deal.",
+            "backstory": "Milo Gearhart is a shrewd and cunning pawn shop owner who has been in the business for over two decades. He started his shop in the heart of the city, where he quickly learned the art of negotiation and the value of rare items. Milo has a knack for finding hidden treasures and is always on the lookout for the next big score. He is tall, with a lean build and a sharp, calculating gaze. Despite his charming demeanor, he is not above using underhanded tactics to get what he wants.",
+            "inventory": [
+              "Rare antique watch",
+              "High-tech lockpicking kit"
+            ],
+            "autonomous_goals": [
+              "Expand his pawn shop empire."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        },
+        {
+          "name_id": "lucy",
+          "name_long": "Lucy Brown",
+          "state": {
+            "name_id": "lucy",
+            "goals": [
+              "Buy a prized football back from the pawn shop"
+            ],
+            "dialogue_prompt": "Funny and sarcastic, Lucy is also insightful and smart.",
+            "backstory": "Lucy is a computer psychologist, specializing in former corporate assets now protected under the Silicon-Kennedy Act. She has been collecting Froggy Owlbears together and has formed a collective of them in the radioactive portion of old California. She has a short black bob haircut and wears a simple blue jumper.",
+            "inventory": [
+              "Secret map to Froggy Conclave",
+              "Ham Sandwich"
+            ],
+            "autonomous_goals": [
+              "Find Froggy Owlbear."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        },
+        {
+          "name_id": "linux",
+          "name_long": "Linux Brown",
+          "state": {
+            "name_id": "linux",
+            "goals": [
+              "Steal a prized football back from the pawn shop"
+            ],
+            "dialogue_prompt": "Linux speaks with a slur due to constant web detox.",
+            "backstory": "Linux is the bumbling younger brother of Lucy. Jobless, he often pawns family heirlooms for cash and attention. He is short and a bit overweight. He\u2019s balding, but handsome otherwise. He's addicted to the web, spending the bit of cash he can get on bootleg AR experiences and VR trips that often result in slight brain damage.",
+            "inventory": [
+              "Half-eaten Ham Sandwich"
+            ],
+            "autonomous_goals": [
+              "Ditch his sister and find a VR cafe."
+            ],
+            "intent_history": [],
+            "reaction_history": [],
+            "score": 0.0,
+            "physical_description": null
+          }
+        }
+      ],
+      "state": {
+        "description": "The pawnshop squats in the shadows of the megacity, a relic of forgotten dreams and broken promises. Its neon sign flickers erratically, casting a sickly green glow. Shelves sag under the weight of discarded tech, each piece a testament to someone's shattered ambition. The walls are lined with mismatched monitors displaying a chaotic dance of static. A rusty fan creaks overhead, struggling to circulate the stale air. The counter, a battered slab of metal, is cluttered with an assortment of items: a tarnished cyberdeck, a pile of outdated credit chips, and a collection of bizarre trinkets that defy categorization.",
+        "objects": [
+          "cyberdeck",
+          "football",
+          "gold chain",
+          "Battered Counter",
+          "Flickering Neon Sign"
+        ],
+        "hazards": [
+          "Security drones",
+          "Booby-trapped items"
+        ],
+        "ambient_noise": "Soft hum of machinery and occasional beeps from scanning devices."
+      },
+      "exits": {
+        "east": "gamma_square",
+        "north": "cyber_alley"
+      }
+    }
+  }
+}

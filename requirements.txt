@@ -1,0 +1,8 @@
+fastapi  
+uvicorn[standard]  
+pydantic  
+openai  
+instructor  
+python-dotenv  
+azure-identity  
+azure-keyvault-secrets
